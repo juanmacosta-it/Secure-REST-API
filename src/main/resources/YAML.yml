@@ -19,3 +19,8 @@ logging:
   level:
     com.securevault: DEBUG
     org.springframework.security: INFO
+    
+security:
+  jwt:
+    secret-key: c2VjdXJlLXZhdWx0LXN1cGVyLXNlY3JldC1rZXktY2hhbmdlLWluLXByb2R1Y3Rpb24tMjU2Yml0cw==
+    expiration: 86400000    
