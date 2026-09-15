@@ -1,6 +1,6 @@
 package com.securevault.secure_vault.repository;
 
-import com.securevault.securevault.model.User;
+import com.securevault.secure_vault.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

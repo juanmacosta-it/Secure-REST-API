@@ -1,6 +1,6 @@
 package com.securevault.secure_vault.repository;
 
-import com.securevault.securevault.model.Transaction;
+import com.securevault.secure_vault.model.Transaction;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.data.jpa.repository.Query;

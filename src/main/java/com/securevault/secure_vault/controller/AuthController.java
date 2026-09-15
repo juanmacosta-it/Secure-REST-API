@@ -1,14 +1,31 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
 package com.securevault.secure_vault.controller;
 
-/**
- *
- * @author Usuario
- */
+import com.securevault.secure_vault.dto.AuthResponse;
+import com.securevault.secure_vault.dto.LoginRequest;
+import com.securevault.secure_vault.dto.RegisterRequest;
+import com.securevault.secure_vault.service.AuthService;
+import jakarta.validation.Valid;
+import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequestMapping("/api/auth")                                         // (1)
+@RequiredArgsConstructor
 public class AuthController {
 
+      private final AuthService authService;
+
+    @PostMapping("/register")
+    public ResponseEntity<Void> register(@Valid @RequestBody RegisterRequest request) { // (2)
+        authService.register(request);
+        return ResponseEntity.status(HttpStatus.CREATED).build();     // (3)
+    }
+
+    @PostMapping("/login")
+    public ResponseEntity<AuthResponse> login(@Valid @RequestBody LoginRequest request) {
+        AuthResponse response = authService.login(request);
+        return ResponseEntity.ok(response);
+    }
 }

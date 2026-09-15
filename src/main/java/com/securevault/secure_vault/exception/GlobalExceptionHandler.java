@@ -1,7 +1,7 @@
 package com.securevault.secure_vault.exception;
 
 import jakarta.servlet.http.HttpServletRequest;
-import com.securevault.securevault.dto.ErrorResponse;
+import com.securevault.secure_vault.dto.ErrorResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
