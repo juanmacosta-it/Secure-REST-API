@@ -1,16 +1,16 @@
 package com.securevault.secure_vault.service;
 
-import com.securevault.securevault.dto.AuthResponse;
-import com.securevault.securevault.dto.LoginRequest;
-import com.securevault.securevault.dto.RegisterRequest;
-import com.securevault.securevault.exception.AccountLockedException;
-import com.securevault.securevault.exception.InvalidCredentialsException;
-import com.securevault.securevault.exception.UserAlreadyExistsException;
-import com.securevault.securevault.model.Role;
-import com.securevault.securevault.model.User;
-import com.securevault.securevault.repository.UserRepository;
-import com.securevault.securevault.security.CustomUserDetailsService;
-import com.securevault.securevault.security.JwtService;
+import com.securevault.secure_vault.dto.AuthResponse;
+import com.securevault.secure_vault.dto.LoginRequest;
+import com.securevault.secure_vault.dto.RegisterRequest;
+import com.securevault.secure_vault.exception.AccountLockedException;
+import com.securevault.secure_vault.exception.InvalidCredentialsException;
+import com.securevault.secure_vault.exception.UserAlreadyExistsException;
+import com.securevault.secure_vault.model.Role;
+import com.securevault.secure_vault.model.User;
+import com.securevault.secure_vault.repository.UserRepository;
+import com.securevault.secure_vault.security.CustomUserDetailsService;
+import com.securevault.secure_vault.security.JwtService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -22,7 +22,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 import java.util.Optional;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.*;
