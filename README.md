@@ -1,6 +1,3 @@
-# Secure-REST-API
-Secure REST API simulating a banking authentication and transaction system, built with Spring Boot to demonstrate industry-standard security practices in Java.
-
 # Secure Vault
 
 Secure banking-style REST API built with Spring Boot to demonstrate
